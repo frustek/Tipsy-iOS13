@@ -22,7 +22,8 @@ class ResultsViewController: UIViewController {
         super.viewDidLoad()
 
         totalLabel.text = String(format: "%.2f", result)
-        // Do any additional setup after loading the view.
+        settingsLabel.text = "Split between \(split) people, with \(tip)% tip."
+
     }
     
     @IBAction func recalculatePressed(_ sender: UIButton) {
